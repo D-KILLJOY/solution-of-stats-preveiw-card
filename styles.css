@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 62.5%;
+
+	--Very-dark-blue: hsl(233, 47%, 7%);
+	--Dark-desaturated-blue: hsl(244, 38%, 16%);
+	--Soft-violet: hsl(277, 64%, 61%);
+
+	--White: hsl(0, 0%, 100%);
+	--Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+	--Slightly-transparent-white2: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: var(--Very-dark-blue);
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	width: 30rem;
+}
+
+.image {
+	width: 30rem;
+	height: 21rem;
+	position: relative;
+	border-radius: 1rem 1rem 0 0;
+	background: url(./images/image-header-mobile.jpg) center/cover;
+	background-color: var(--Soft-violet);
+	background-blend-mode: multiply;
+}
+
+.text {
+	background-color: var(--Dark-desaturated-blue);
+	padding: 2rem 4.5rem;
+	border-radius: 0 0 1rem 1rem;
+}
+
+.header {
+	font-family: "Inter", sans-serif;
+	font-size: 2rem;
+	text-align: center;
+	font-weight: 700;
+	color: var(--White);
+	margin-bottom: 2rem;
+}
+
+.description {
+	font-family: "Inter", sans-serif;
+	color: var(--Slightly-transparent-white);
+	text-align: center;
+	line-height: 1.7;
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+.stats {
+	display: flex;
+	flex-direction: column;
+}
+
+.stat {
+	margin-bottom: 2rem;
+}
+
+.stat h2 {
+	color: var(--White);
+	font-family: "Inter", sans-serif;
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+
+.stat p {
+	font-family: "Inter", sans-serif;
+	text-transform: uppercase;
+	color: var(--Slightly-transparent-white);
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+.purple {
+	color: var(--Soft-violet);
+}
+
+.attribution {
+	font-size: 1.4rem;
+	text-align: center;
+	font-family: "Inter", sans-serif;
+	color: var(--White);
+	font-weight: 900;
+	margin: -4rem 0;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 900px) {
+	.card {
+		display: flex;
+		flex-direction: row-reverse;
+		width: 80rem;
+		height: 40rem;
+	}
+
+	.image {
+		width: 40rem;
+		height: 32rem;
+		border-radius: 0 0.5rem 0.5rem 0;
+	}
+
+	.text {
+		padding: 4rem 4.5rem;
+		width: 40rem;
+		height: 32rem;
+		border-radius: 0.5rem 0 0 0.5rem;
+	}
+
+	.header {
+		font-size: 2.4rem;
+		text-align: left;
+		font-weight: 700;
+		color: var(--White);
+		margin-bottom: 2rem;
+	}
+
+	.description {
+		text-align: left;
+		line-height: 1.7;
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+	}
+
+	.stats {
+		display: flex;
+		flex-direction: row;
+		gap: 5rem;
+		margin: 8rem 0 0;
+	}
+
+	.stat {
+		margin-bottom: 2rem;
+	}
+
+	.stat h2 {
+		text-align: left;
+	}
+
+	.stat p {
+		text-align: left;
+		font-size: 0.9rem;
+	}
+}
